@@ -21,9 +21,11 @@ import okhttp3.Request;
 public class MainActivity extends AppCompatActivity {
 
     private String getUrl = "http://guolin.tech/api/weather";
-
+    private String postUrl = "http://club.dzwww.com/member.php?mod=logging&action=login&loginsubmit=yes&loginhash=LgZ7e&mobile=2&handlekey=loginform&inajax=1";
     private TextView tv_result;
     private Button btn_get;
+    private Button btn_post_string;
+    private Button btn_post_kv;
 
     private ProgressDialog progressDialog;
 
@@ -33,12 +35,92 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         tv_result = (TextView) findViewById(R.id.tv_result);
         btn_get = (Button) findViewById(R.id.btn_get);
+        btn_post_string = (Button) findViewById(R.id.btn_post_string);
+        btn_post_kv = (Button) findViewById(R.id.btn_post_kv);
+
         btn_get.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 getData();
             }
         });
+
+        btn_post_string.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                postString();
+            }
+        });
+
+        btn_post_kv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                postKV();
+            }
+        });
+    }
+
+    private void postKV() {
+        OkManager.post()
+                .addParams("username", "zx1234567890")
+                .addParams("password", "zx1234567890")
+                .url(postUrl)
+                .build()
+                .execute(new StringCallback() {
+
+                    @Override
+                    public void onError(okhttp3.Call call, Exception e, int id) {
+                        tv_result.setText(e.toString());
+                    }
+
+                    @Override
+                    public void onResponse(String response, int id) {
+                        tv_result.setText(response);
+                    }
+
+                    @Override
+                    public void onBefore(Request request, int id) {
+                        super.onBefore(request, id);
+                        showProgressDialog();
+                    }
+
+                    @Override
+                    public void onAfter(int id) {
+                        super.onAfter(id);
+                        closeProgressDialog();
+                    }
+                });
+    }
+
+    private void postString() {
+        OkManager.postString()
+                .content("username=zx1234567890&password=zx1234567890")
+                .url(getUrl)
+                .build()
+                .execute(new StringCallback() {
+
+                    @Override
+                    public void onError(okhttp3.Call call, Exception e, int id) {
+                        tv_result.setText(e.toString());
+                    }
+
+                    @Override
+                    public void onResponse(String response, int id) {
+                        tv_result.setText(response);
+                    }
+
+                    @Override
+                    public void onBefore(Request request, int id) {
+                        super.onBefore(request, id);
+                        showProgressDialog();
+                    }
+
+                    @Override
+                    public void onAfter(int id) {
+                        super.onAfter(id);
+                        closeProgressDialog();
+                    }
+                });
     }
 
     private void getData() {
