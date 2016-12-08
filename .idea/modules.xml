@@ -3,10 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/OkManager.iml" filepath="$PROJECT_DIR$/OkManager.iml" />
-      <module fileurl="file://$PROJECT_DIR$/OkManager.iml" filepath="$PROJECT_DIR$/OkManager.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/okmanager/okmanager.iml" filepath="$PROJECT_DIR$/okmanager/okmanager.iml" />
       <module fileurl="file://$PROJECT_DIR$/okmanager/okmanager.iml" filepath="$PROJECT_DIR$/okmanager/okmanager.iml" />
     </modules>
   </component>

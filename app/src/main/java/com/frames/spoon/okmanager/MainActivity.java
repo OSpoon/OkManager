@@ -63,7 +63,10 @@ public class MainActivity extends AppCompatActivity {
     private void postKV() {
         OkManager.post()
                 .addParams("username", "zx1234567890")
-                .addParams("password", "zx1234567890")
+                .addParams("password", "e408cefd272be35f9553c13c08bea3be")
+                .addParams("fastloginfield", "username")
+                .addParams("handlekey", "ls")
+                .addParams("quickforward", "yes")
                 .url(postUrl)
                 .build()
                 .execute(new StringCallback() {
@@ -94,7 +97,8 @@ public class MainActivity extends AppCompatActivity {
 
     private void postString() {
         OkManager.postString()
-                .content("username=zx1234567890&password=zx1234567890")
+//                .content("{\"fastloginfield\":\"username\",\"handlekey\":\"ls\",\"password\":\"e408cefd272be35f9553c13c08bea3be\",\"quickforward\":\"yes\",\"username\":\"zx1234567890\"}")
+                .content("fastloginfield=username&handlekey=ls&password=e408cefd272be35f9553c13c08bea3be&quickforward=yes&username=zx1234567890")
                 .url(getUrl)
                 .build()
                 .execute(new StringCallback() {

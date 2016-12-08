@@ -1,55 +1,59 @@
-Request URL:http://club.dzwww.com/member.php?mod=logging&action=login&loginsubmit=yes&loginhash=LgZ7e&mobile=2&handlekey=loginform&inajax=1
-Request Method:POST
-Status Code:200 OK
-Remote Address:60.222.221.59:80
-Response Headers
-view source
-Cache-Control:no-store, private, post-check=0, pre-check=0, max-age=0
-Connection:keep-alive
-Content-Encoding:gzip
-Content-Type:text/xml; charset=utf-8
-Date:Wed, 07 Dec 2016 10:46:37 GMT
-Expires:-1
-Load-Balancing:B286
-Pragma:no-cache
-Server:nginx
-Set-Cookie:17mm_3f46_mobile=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; path=/; domain=dzwww.com
-Set-Cookie:17mm_3f46_connect_is_bind=0; expires=Thu, 07-Dec-2017 10:46:37 GMT; path=/; domain=dzwww.com
-Set-Cookie:17mm_3f46_lastact=1481107597%09member.php%09logging; expires=Thu, 08-Dec-2016 10:46:37 GMT; path=/; domain=dzwww.com
-Transfer-Encoding:chunked
-X-Via:1.1 xiychengwtong13:9 (Cdn Cache Server V2.0)
-Request Headers
-view source
-Accept:application/xml, text/xml, */*; q=0.01
-Accept-Encoding:gzip, deflate
-Accept-Language:zh-CN,zh;q=0.8
-Connection:keep-alive
-Content-Length:219
-Content-Type:application/x-www-form-urlencoded; charset=UTF-8
-Cookie:afpCT=1; wdcid=43a98191ec110f5c; Hm_lvt_f9f00422e358e536c9180a0441979ef8=1481106317,1481106407,1481107120; Hm_lpvt_f9f00422e358e536c9180a0441979ef8=1481107384; Hm_lvt_f488ded6e4015c3c868d16997d0959a7=1481106317,1481107121; Hm_lpvt_f488ded6e4015c3c868d16997d0959a7=1481107384; wdlast=1481107384; 17mm_3f46_saltkey=TYo99p74; 17mm_3f46_lastvisit=1481103943; 17mm_3f46_st_t=0%7C1481107543%7Cd508042e4a47e9663c236f138f578b34; 17mm_3f46_atarget=1; 17mm_3f46_forum_lastvisit=D_222_1481107543; 17mm_3f46_visitedfid=222; 17mm_3f46_ulastactivity=b02cKa8vrIFTyMAQQXbw2Ksim9rodExjbG7xnj6XY4KRAgiZm9UH; 17mm_3f46_auth=1fd2yE0NY2iLdHaURAFyYlWqPnAKWln6TB7Axj1IDEhqJ7dVd2jqBp7faGb8KvxmbVRRCDEgCEhgme1o4lIILGRw0Pt%2F; 17mm_3f46_lastcheckfeed=8599599%7C1481107565; 17mm_3f46_lip=60.222.221.13%2C1481107339; 17mm_3f46_lastact=1481107569%09home.php%09space; 17mm_3f46_connect_is_bind=0; 17mm_3f46_home_readfeed=1481107569; 17mm_3f46_sid=FF49iI; 17mm_3f46_dismobilemessage=1
-Host:club.dzwww.com
-Origin:http://club.dzwww.com
-Referer:http://club.dzwww.com/member.php?mod=logging&action=login&mobile=2
-User-Agent:Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.76 Mobile Safari/537.36
-X-Requested-With:XMLHttpRequest
-Query String Parameters
-view source
-view URL encoded
-mod:logging
-action:login
-loginsubmit:yes
-loginhash:LgZ7e
-mobile:2
-handlekey:loginform
-inajax:1
-Form Data
-view source
-view URL encoded
-formhash:e78dd65b
-referer:http://club.dzwww.com/forum.php?mod=forumdisplay&fid=222&mobile=2
-fastloginfield:username
-cookietime:2592000
-username:zx1234567890
-password:zx1234567890
-questionid:0
-answer:
+//请求地址
+http://club.dzwww.com/member.php?mod=logging&action=login&loginsubmit=yes&infloat=yes&lssubmit=yes&inajax=1
+
+//参数
+action=login
+inajax=1
+infloat=yes
+loginsubmit=yes
+lssubmit=yes
+mod=logging
+
+//带参数地址
+http://club.dzwww.com/member.php?mod=logging&action=login&loginsubmit=yes&infloat=yes&lssubmit=yes&inajax=1&fastloginfield=username&handlekey=ls&password=e408cefd272be35f9553c13c08bea3be&quickforward=yes&username=zx1234567890
+
+POST参数
+fastloginfield=username
+handlekey=ls
+password=e408cefd272be35f9553c13c08bea3be
+quickforward=yes
+username=zx1234567890
+
+//请求头
+POST /member.php?mod=logging&action=login&loginsubmit=yes&infloat=yes&lssubmit=yes&inajax=1 HTTP/1.1
+Host: club.dzwww.com
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+Referer: http://club.dzwww.com/member.php
+Cookie: Hm_lvt_f9f00422e358e536c9180a0441979ef8=1481166239; Hm_lpvt_f9f00422e358e536c9180a0441979ef8=1481166451; Hm_lvt_f488ded6e4015c3c868d16997d0959a7=1481166239; Hm_lpvt_f488ded6e4015c3c868d16997d0959a7=1481166451; wdcid=4c8c513f8a28608b; wdlast=1481166451; 17mm_3f46_sid=KlZtc6; 17mm_3f46_saltkey=jFPRP8z9; 17mm_3f46_lastvisit=1481162829; 17mm_3f46_lastact=1481166430%09home.php%09misc; 17mm_3f46_sendmail=1
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+//响应头
+HTTP/1.1 200 OK
+Date: Thu, 08 Dec 2016 03:07:26 GMT
+Server: nginx
+Content-Type: text/xml; charset=utf-8
+Transfer-Encoding: chunked
+Set-Cookie: 17mm_3f46_lastact=1481166446%09member.php%09logging; expires=Fri, 09-Dec-2016 03:07:26 GMT; path=/; domain=dzwww.com
+17mm_3f46_ulastactivity=dfdbQKX8Fe3t75D0gVcND4YrdkOCcqO3rKwIjFhSiag749kKhrv3; expires=Fri, 08-Dec-2017 03:07:26 GMT; path=/; domain=dzwww.com
+17mm_3f46_sid=KlZtc6; expires=Fri, 09-Dec-2016 03:07:26 GMT; path=/; domain=dzwww.com
+17mm_3f46_auth=5ce1xaPM%2BOQNcDjr43r4Nhb44iOwUkwT52WGlnJq8C42DI0u7JBL67eJvT6SvMQzXMmOE%2Fca51b91vSdCH7XoVg2M5Je; path=/; domain=dzwww.com; httponly
+17mm_3f46_loginuser=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; path=/; domain=dzwww.com
+17mm_3f46_activationauth=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; path=/; domain=dzwww.com
+17mm_3f46_pmnum=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; path=/; domain=dzwww.com
+17mm_3f46_lastcheckfeed=8599599%7C1481166446; expires=Fri, 08-Dec-2017 03:07:26 GMT; path=/; domain=dzwww.com
+17mm_3f46_checkfollow=1; expires=Thu, 08-Dec-2016 03:07:56 GMT; path=/; domain=dzwww.com
+17mm_3f46_lip=60.222.221.13%2C1481166337; path=/; domain=dzwww.com
+Expires: -1
+Cache-Control: no-store, private, post-check=0, pre-check=0, max-age=0
+Pragma: no-cache
+Content-Encoding: gzip
+Load-Balancing: B280
+X-Via: 1.1 xiychengwtong13:9 (Cdn Cache Server V2.0)
+Connection: keep-alive
+
+cUrl命令
+curl 'http://club.dzwww.com/member.php?mod=logging&action=login&loginsubmit=yes&infloat=yes&lssubmit=yes&inajax=1' -H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8' -H 'Accept-Encoding: gzip, deflate' -H 'Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3' -H 'Connection: keep-alive' -H 'Cookie: Hm_lvt_f9f00422e358e536c9180a0441979ef8=1481166239; Hm_lpvt_f9f00422e358e536c9180a0441979ef8=1481166451; Hm_lvt_f488ded6e4015c3c868d16997d0959a7=1481166239; Hm_lpvt_f488ded6e4015c3c868d16997d0959a7=1481166451; wdcid=4c8c513f8a28608b; wdlast=1481166451; 17mm_3f46_sid=KlZtc6; 17mm_3f46_saltkey=jFPRP8z9; 17mm_3f46_lastvisit=1481162829; 17mm_3f46_lastact=1481166430%09home.php%09misc; 17mm_3f46_sendmail=1' -H 'Host: club.dzwww.com' -H 'Referer: http://club.dzwww.com/member.php' -H 'Upgrade-Insecure-Requests: 1' -H 'User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0' -H 'Content-Type: application/x-www-form-urlencoded' --data 'fastloginfield=username&username=zx1234567890&password=e408cefd272be35f9553c13c08bea3be&quickforward=yes&handlekey=ls'
